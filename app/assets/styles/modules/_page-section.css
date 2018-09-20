@@ -1,0 +1,8 @@
+.page-section {
+	
+	&__image {
+		margin-bottom: 10px;
+		box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .2), 0 6px 30px 0 rgba( 0, 0, 0, 0.05);
+	}
+
+}

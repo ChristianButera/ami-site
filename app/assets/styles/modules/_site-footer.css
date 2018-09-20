@@ -1,0 +1,28 @@
+.site-footer {
+	background-color: $mainBlue;
+	color: #FFF;
+
+	li {
+		margin: 10px 8px;
+	}
+	
+	&__header {
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-bottom: 3px;
+		border-bottom: 1px solid rgba( 225, 225, 225, 0.2);
+	}
+
+	&__list {
+		margin: 8px 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list-item {
+		text-decoration: none;
+		color: #FFF;
+		margin-top: 5px;
+	}
+
+}

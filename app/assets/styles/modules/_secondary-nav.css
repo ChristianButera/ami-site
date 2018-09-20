@@ -1,0 +1,16 @@
+.secondary-nav {
+	background-color: rgba( 0, 0, 0, .5);
+	background-image: url('/assets/images/hero--large.jpg') center center no-repeat;
+	background-size: cover;
+	color: #FFF;
+	padding: 30px;
+
+	&__header {
+		font-weight: 300;
+		font-size: 3rem;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-top: 50px;
+		box-shadow: 0 4px 6px -6px #FFF;
+	}
+}
