@@ -1,6 +1,7 @@
 .headline {
 	font-weight: 100;
-	font-size: 200%;
+	font-size: 100%;
+	margin-bottom: 0;
 
 	&--center {
 		text-align: center;

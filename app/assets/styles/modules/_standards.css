@@ -1,5 +1,16 @@
 .standards {
-	margin-bottom: 50px;
+	background-color: rgba( 0, 0, 0, .5);
+	background-size: cover;
+	padding: 0;
+
+	@mixin atMedium {
+		background-image: url('/assets/images/hero_large.jpg');
+		background-attachment: fixed;
+	}
+
+	@mixin atLarge {
+		padding-bottom: 80px;
+	}
 }
 .standard {
 	background-color: #FFF;

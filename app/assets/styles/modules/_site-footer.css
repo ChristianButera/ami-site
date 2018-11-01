@@ -1,10 +1,6 @@
 .site-footer {
 	background-color: $mainBlue;
 	color: #FFF;
-
-	li {
-		margin: 10px 8px;
-	}
 	
 	&__header {
 		font-size: 1.5rem;
@@ -17,6 +13,11 @@
 		margin: 8px 0;
 		padding: 0;
 		list-style: none;
+	}
+
+	/* Disregarded BEM */
+	li {
+		margin: 10px 8px;
 	}
 
 	&__list-item {

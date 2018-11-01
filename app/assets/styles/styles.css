@@ -16,4 +16,7 @@
 @import "modules/_primary-nav";
 @import "modules/_secondary-nav";
 @import "modules/_standards";
-
+@import "modules/_reveal-item";
+@import "modules/_modal";
+@import "modules/_gallery";
+@import "modules/_lightbox";

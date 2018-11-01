@@ -1,8 +1,31 @@
-.large-hero { 
+@keyframes slideInDown {
+	from {
+	  transform: translate3d(0, -10%, 0);
+	}
+  
+	to {
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  .slideInDown {
+	-webkit-animation-name: slideInDown;
+	animation-name: slideInDown;
+  }
+
+ .large-hero { 
 	position: relative;
 	background-color: $mainBlue;
-	height: 600px;
+	height: 350px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	clip-path: polygon(100% 84%, 50% 100%, 0 82%, 0 0, 100% 0);
+	animation: sildeInDown .8s;
+
+	
+
+	@mixin atSmall {
+		height: 500px;		
+	}
 
 	&__text-content {
 		position: absolute;
@@ -16,11 +39,10 @@
 	&__title {
 		font-weight: 300;
 		color: #FFF;
-		margin: 0;
-		font-size: 1.1rem;
+		font-size: 1.5rem;
 
 		@mixin atSmall {
-			font-size: 2rem;
+			font-size: 3rem;
 		}
 
 		@mixin atMedium {
@@ -34,14 +56,39 @@
 	}
 
 	&__subtitle {
+		margin: 30px 0;
 		font-weight: 100;
 		color: #FFF;
-		text-shadow: 2px 2px 0 rgba( 0, 0, 0, .1);
+		text-shadow: 2px 2px 0 rgba( 0, 0, 0, .3);
 		font-size: 1.1rem;
 
 		@mixin atSmall {
-			font-size: 2.9rem;
+			font-size: 2rem;
 		}
 	}
 }
+
+@keyframes slideInDown {
+	from {
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	  visibility: visible;
+	}
+  
+	to {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  .slideInDown {
+	-webkit-animation-name: slideInDown;
+	animation-name: slideInDown;
+  }
+  
+
+
+
+
+  
 

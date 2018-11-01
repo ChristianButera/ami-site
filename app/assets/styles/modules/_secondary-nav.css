@@ -1,16 +1,22 @@
 .secondary-nav {
+	max-height: 100%;
 	background-color: rgba( 0, 0, 0, .5);
-	background-image: url('/assets/images/hero--large.jpg') center center no-repeat;
 	background-size: cover;
 	color: #FFF;
+	text-shadow: 2px 2px 0 rgba( 0, 0, 0, .8);
 	padding: 30px;
+
+	@mixin atMedium {
+		background-image: url('/assets/images/hero--large.jpg');
+	}
 
 	&__header {
 		font-weight: 300;
 		font-size: 3rem;
 		text-align: center;
-		padding-bottom: 20px;
+		padding: 20px 0;
 		margin-top: 50px;
 		box-shadow: 0 4px 6px -6px #FFF;
+		background-color: rgba(47, 85, 114, .8);
 	}
 }

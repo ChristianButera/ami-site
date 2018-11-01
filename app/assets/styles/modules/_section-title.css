@@ -2,14 +2,29 @@
 	font-size: 2.55rem;
 	font-weight: 300;
 	text-align: center;
+	color: #FFF;
 
 	@mixin atSmall {
 		font-size: 3.75rem;
+	}
 
+	&__alt {
+		background-color: $mainBlue;
+		padding: 20px;
 	}
 
 	strong {
 		font-weight: 500;
+	}
+
+	&__subtitle {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 300;
+
+		@mixin atMedium {
+			font-size: 2.5rem;
+		}
 	}
 
 	&--blue {
